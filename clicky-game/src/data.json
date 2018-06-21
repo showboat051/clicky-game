@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "image": "/assets/images/1up.jpg",
+      "clicked": false
+    },
+    {
+        "id":2,
+        "image": "/assets/images/flower.png",
+        "clicked": false
+      },
+
+      {
+        "id":3,
+        "image": "/assets/images/mushroom.jpg",
+        "clicked": false
+      },
+
+      {
+        "id":4,
+        "image": "/assets/images/superMario.jpg",
+        "clicked": false
+      },
+
+      {
+        "id":5,
+        "image": "/assets/images/supermariocover.jpg",
+        "clicked": false
+      }
+
+]
