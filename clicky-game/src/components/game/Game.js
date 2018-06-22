@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
-import data from "../../data.json"
-import Cards from "../cards/Cards.js"
+import data from "../../data.json";
+import Cards from "../cards/Cards.js";
+import Nav from "../nav/Nav.js";
+// import cardValue from "../cards/cardValue.js";
 
 class Game extends Component {
     state = {
@@ -12,8 +14,11 @@ class Game extends Component {
 
 
 
+
 handleCardClick = ()=> {
-    console.log("item was clicked");
+    var between1and20 = Math.floor(Math.random()*20);
+    var score = between1and20;
+    console.log(score);
 }
 
 
@@ -21,6 +26,7 @@ handleCardClick = ()=> {
 render(){
     return (
         <div>
+            <span>SCORE{this.score} </span>
             {this.state.data.map(item =>(
               <Cards
               key={item.id}
@@ -28,6 +34,7 @@ render(){
               handleClick={this.handleCardClick}
               />
             )) }
+            {this.score}
         </div>
 
     )
